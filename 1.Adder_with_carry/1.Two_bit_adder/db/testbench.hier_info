@@ -1,0 +1,36 @@
+|testbench
+
+
+|testbench|two_bit_adder:dut
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+cin => cin.IN1
+sum[0] <= full_adder:zero.sum
+sum[1] <= full_adder:one.sum
+cout <= <GND>
+
+
+|testbench|two_bit_adder:dut|full_adder:zero
+a => half_carry_ab.IN0
+a => half_sum.IN0
+b => half_carry_ab.IN1
+b => half_sum.IN1
+cin => half_carry_cin.IN1
+cin => comb.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testbench|two_bit_adder:dut|full_adder:one
+a => half_carry_ab.IN0
+a => half_sum.IN0
+b => half_carry_ab.IN1
+b => half_sum.IN1
+cin => half_carry_cin.IN1
+cin => comb.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
