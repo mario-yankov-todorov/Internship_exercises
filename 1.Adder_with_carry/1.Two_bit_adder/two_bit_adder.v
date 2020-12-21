@@ -16,7 +16,7 @@ endmodule
 //Create module for two bit adder 
 module two_bit_adder(input [1:0] a, b, input cin, output [1:0] sum, output cout);
 
-//Declare wires for full adde
+//Declare wires for two bit adder
 wire [1:0] carry;
 
 //Make instances of full_adder module to create two bit adder
