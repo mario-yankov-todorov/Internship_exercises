@@ -1,0 +1,86 @@
+$date
+	Wed Dec 23 18:11:08 2020
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module testbench $end
+$var reg 8 ! a [7:0] $end
+$var reg 8 " b [7:0] $end
+$var reg 1 # cin $end
+$var wire 1 $ sum [7] $end
+$var wire 1 % sum [6] $end
+$var wire 1 & sum [5] $end
+$var wire 1 ' sum [4] $end
+$var wire 1 ( sum [3] $end
+$var wire 1 ) sum [2] $end
+$var wire 1 * sum [1] $end
+$var wire 1 + sum [0] $end
+$var wire 1 , cout $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+b0 "
+0#
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+0,
+$end
+#10
+b11111111 !
+b11111111 "
+1*
+1)
+1(
+1'
+1&
+1%
+1$
+1,
+#20
+1#
+1+
+#30
+b10000000 !
+b100000 "
+0$
+0&
+0*
+0)
+0(
+0'
+1&
+1$
+0%
+1%
+0%
+0,
+#40
+b11111111 !
+b0 "
+0+
+1*
+1)
+1(
+1'
+1%
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+1,

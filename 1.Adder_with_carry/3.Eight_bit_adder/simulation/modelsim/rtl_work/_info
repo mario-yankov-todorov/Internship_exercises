@@ -1,0 +1,76 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/3.Eight_bit_adder/simulation/modelsim
+veight_bit_adder
+Z1 !s110 1608739862
+!i10b 1
+!s100 G>:g3lTOSOCfKk9KD`UKE1
+Ie<]hDfg@`iD:nk]DJiU3M0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1608735135
+Z4 8/home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/3.Eight_bit_adder/eight_bit_adder.v
+Z5 F/home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/3.Eight_bit_adder/eight_bit_adder.v
+L0 17
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1608739861.000000
+Z8 !s107 /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/3.Eight_bit_adder/eight_bit_adder.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/3.Eight_bit_adder|/home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/3.Eight_bit_adder/eight_bit_adder.v|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+/home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/3.Eight_bit_adder
+Z12 tCvgOpt 0
+vfull_adder
+R1
+!i10b 1
+!s100 :bPY[La_ikQd^RKje[1mY2
+IJ6_a;VL`;[6]_;kb01PgB1
+R2
+R0
+R3
+R4
+R5
+L0 2
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vtestbench
+!s110 1608739863
+!i10b 1
+!s100 a_[CgjcG@ciAYL>gPF1lo0
+IkXgI]VmDEHemmV]_T50[m0
+R2
+R0
+w1608739801
+8/home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/3.Eight_bit_adder/testbench.v
+F/home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/3.Eight_bit_adder/testbench.v
+L0 2
+R6
+r1
+!s85 0
+31
+!s108 1608739863.000000
+!s107 /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/3.Eight_bit_adder/testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/3.Eight_bit_adder|/home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/3.Eight_bit_adder/testbench.v|
+!i113 1
+R10
+R11
+R12
