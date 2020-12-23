@@ -1,5 +1,5 @@
 $date
-	Mon Dec 21 16:12:17 2020
+	Wed Dec 23 12:49:31 2020
 $end
 $version
 	ModelSim Version 10.5b
@@ -19,31 +19,27 @@ $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-bx !
-bx "
-x#
-x%
-x$
-z&
-$end
-#10
 b0 !
 b0 "
 0#
 0%
 0$
-#20
-b1 !
-b1 "
+0&
+$end
+#10
+b11 !
+b11 "
+1&
 1$
-#30
+#20
 1#
 1%
+#30
+b1 !
+b1 "
+0&
 #40
 b0 "
 0%
 0$
 1$
-#50
-b0 !
-b1 "

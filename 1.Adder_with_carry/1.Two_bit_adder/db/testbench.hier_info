@@ -9,7 +9,7 @@ b[1] => b[1].IN1
 cin => cin.IN1
 sum[0] <= full_adder:zero.sum
 sum[1] <= full_adder:one.sum
-cout <= <GND>
+cout <= full_adder:one.cout
 
 
 |testbench|two_bit_adder:dut|full_adder:zero

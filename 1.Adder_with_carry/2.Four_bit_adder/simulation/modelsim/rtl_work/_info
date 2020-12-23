@@ -1,0 +1,76 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/2.Four_bit_adder/simulation/modelsim
+vfour_bit_adder
+Z1 !s110 1608728832
+!i10b 1
+!s100 RTe>73cHMg8H0=eFR=5fU1
+If0A4Goj8ZNi<FTBE9_XX@2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1608728549
+Z4 8/home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/2.Four_bit_adder/four_bit_adder.v
+Z5 F/home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/2.Four_bit_adder/four_bit_adder.v
+L0 17
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1608728831.000000
+Z8 !s107 /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/2.Four_bit_adder/four_bit_adder.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/2.Four_bit_adder|/home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/2.Four_bit_adder/four_bit_adder.v|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+/home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/2.Four_bit_adder
+Z12 tCvgOpt 0
+vfull_adder
+R1
+!i10b 1
+!s100 :bPY[La_ikQd^RKje[1mY2
+IJb6f4fc9eYFfI35iWo]>d2
+R2
+R0
+R3
+R4
+R5
+L0 2
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vtestbench
+R1
+!i10b 1
+!s100 8XTN_LG[N4[LDf^`153LI1
+IUXLL8P1QoUP0k@:3o>2;F1
+R2
+R0
+w1608728434
+8/home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/2.Four_bit_adder/testbench.v
+F/home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/2.Four_bit_adder/testbench.v
+L0 2
+R6
+r1
+!s85 0
+31
+!s108 1608728832.000000
+!s107 /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/2.Four_bit_adder/testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/2.Four_bit_adder|/home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/2.Four_bit_adder/testbench.v|
+!i113 1
+R10
+R11
+R12
