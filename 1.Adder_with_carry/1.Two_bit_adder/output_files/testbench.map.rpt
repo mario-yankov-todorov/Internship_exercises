@@ -1,5 +1,5 @@
 Analysis & Elaboration report for testbench
-Wed Dec 23 12:49:10 2020
+Wed Dec 23 15:43:07 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Wed Dec 23 12:49:10 2020       ;
+; Analysis & Elaboration Status ; Successful - Wed Dec 23 15:43:07 2020       ;
 ; Quartus Prime Version         ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                 ; testbench                                   ;
 ; Top-level Entity Name         ; testbench                                   ;
@@ -171,7 +171,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Wed Dec 23 12:48:46 2020
+    Info: Processing started: Wed Dec 23 15:42:45 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Two_bit_adder -c testbench --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
@@ -182,43 +182,43 @@ Info (12021): Found 1 design units, including 1 entities, in source file testben
     Info (12023): Found entity 1: testbench File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 2
 Info (12127): Elaborating entity "testbench" for the top level hierarchy
 Warning (10175): Verilog HDL warning at testbench.v(16): ignoring unsupported system task File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 16
-Info (10648): Verilog HDL Display System Task info at testbench.v(23): 1. ERROR: the output was wrong! File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 23
-Info (10648): Verilog HDL Display System Task info at testbench.v(24):    Expected: sum = 0, cout = 0 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 24
-Info (10648): Verilog HDL Display System Task info at testbench.v(25):    Actual: sum = 0, cout = 0 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 25
-Info (10648): Verilog HDL Display System Task info at testbench.v(28): 1. The output was correct! File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 28
-Info (10648): Verilog HDL Display System Task info at testbench.v(29):    Expected: sum = 0, cout = 0 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 29
-Info (10648): Verilog HDL Display System Task info at testbench.v(30):    Actual: sum = 0, cout = 0 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 30
-Info (10648): Verilog HDL Display System Task info at testbench.v(38): 2. ERROR: the output was wrong! File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 38
-Info (10648): Verilog HDL Display System Task info at testbench.v(39):    Expected: sum = 2, cout = 1 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 39
-Info (10648): Verilog HDL Display System Task info at testbench.v(40):    Actual: sum = 0, cout = 0 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 40
-Info (10648): Verilog HDL Display System Task info at testbench.v(43): 2. The output was correct! File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 43
-Info (10648): Verilog HDL Display System Task info at testbench.v(44):    Expected: sum = 2, cout = 1 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 44
-Info (10648): Verilog HDL Display System Task info at testbench.v(45):    Actual: sum = 0, cout = 0 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 45
-Info (10648): Verilog HDL Display System Task info at testbench.v(53): 3. ERROR: the output was wrong! File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 53
-Info (10648): Verilog HDL Display System Task info at testbench.v(54):    Expected: sum = 3, cout = 1 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 54
-Info (10648): Verilog HDL Display System Task info at testbench.v(55):    Actual: sum = 0, cout = 0 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 55
-Info (10648): Verilog HDL Display System Task info at testbench.v(58): 3. The output was correct! File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 58
-Info (10648): Verilog HDL Display System Task info at testbench.v(59):    Expected: sum = 3, cout = 1 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 59
-Info (10648): Verilog HDL Display System Task info at testbench.v(60):    Actual: sum = 0, cout = 0 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 60
-Info (10648): Verilog HDL Display System Task info at testbench.v(68): 4. ERROR: the output was wrong! File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 68
-Info (10648): Verilog HDL Display System Task info at testbench.v(69):    Expected: sum = 3, cout = 0 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 69
-Info (10648): Verilog HDL Display System Task info at testbench.v(70):    Actual: sum = 0, cout = 0 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 70
-Info (10648): Verilog HDL Display System Task info at testbench.v(73): 4. The output was correct! File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 73
-Info (10648): Verilog HDL Display System Task info at testbench.v(74):    Expected: sum = 3, cout = 0 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 74
-Info (10648): Verilog HDL Display System Task info at testbench.v(75):    Actual: sum = 0, cout = 0 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 75
-Info (10648): Verilog HDL Display System Task info at testbench.v(83): 5. ERROR: the output was wrong! File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 83
-Info (10648): Verilog HDL Display System Task info at testbench.v(84):    Expected: sum = 2, cout = 0 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 84
-Info (10648): Verilog HDL Display System Task info at testbench.v(85):    Actual: sum = 0, cout = 0 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 85
-Info (10648): Verilog HDL Display System Task info at testbench.v(88): 5. The output was correct! File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 88
-Info (10648): Verilog HDL Display System Task info at testbench.v(89):    Expected: sum = 2, cout = 0 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 89
-Info (10648): Verilog HDL Display System Task info at testbench.v(90):    Actual: sum = 0, cout = 0 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 90
-Warning (10175): Verilog HDL warning at testbench.v(93): ignoring unsupported system task File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 93
+Info (10648): Verilog HDL Display System Task info at testbench.v(26): 1. ERROR: the output was wrong! File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 26
+Info (10648): Verilog HDL Display System Task info at testbench.v(27):    Expected: sum = 0, cout = 0 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 27
+Info (10648): Verilog HDL Display System Task info at testbench.v(28):    Actual:      sum = 0, cout = 0 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 28
+Info (10648): Verilog HDL Display System Task info at testbench.v(31): 1. The output was correct! File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 31
+Info (10648): Verilog HDL Display System Task info at testbench.v(32):    Expected: sum = 0, cout = 0 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 32
+Info (10648): Verilog HDL Display System Task info at testbench.v(33):    Actual: sum = 0, cout = 0 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 33
+Info (10648): Verilog HDL Display System Task info at testbench.v(41): 2. ERROR: the output was wrong! File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 41
+Info (10648): Verilog HDL Display System Task info at testbench.v(42):    Expected: sum = 2, cout = 1 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 42
+Info (10648): Verilog HDL Display System Task info at testbench.v(43):    Actual: sum = 0, cout = 0 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 43
+Info (10648): Verilog HDL Display System Task info at testbench.v(46): 2. The output was correct! File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 46
+Info (10648): Verilog HDL Display System Task info at testbench.v(47):    Expected: sum = 2, cout = 1 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 47
+Info (10648): Verilog HDL Display System Task info at testbench.v(48):    Actual: sum = 0, cout = 0 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 48
+Info (10648): Verilog HDL Display System Task info at testbench.v(56): 3. ERROR: the output was wrong! File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 56
+Info (10648): Verilog HDL Display System Task info at testbench.v(57):    Expected: sum = 3, cout = 1 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 57
+Info (10648): Verilog HDL Display System Task info at testbench.v(58):    Actual: sum = 0, cout = 0 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 58
+Info (10648): Verilog HDL Display System Task info at testbench.v(61): 3. The output was correct! File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 61
+Info (10648): Verilog HDL Display System Task info at testbench.v(62):    Expected: sum = 3, cout = 1 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 62
+Info (10648): Verilog HDL Display System Task info at testbench.v(63):    Actual: sum = 0, cout = 0 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 63
+Info (10648): Verilog HDL Display System Task info at testbench.v(71): 4. ERROR: the output was wrong! File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 71
+Info (10648): Verilog HDL Display System Task info at testbench.v(72):    Expected: sum = 3, cout = 0 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 72
+Info (10648): Verilog HDL Display System Task info at testbench.v(73):    Actual: sum = 0, cout = 0 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 73
+Info (10648): Verilog HDL Display System Task info at testbench.v(76): 4. The output was correct! File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 76
+Info (10648): Verilog HDL Display System Task info at testbench.v(77):    Expected: sum = 3, cout = 0 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 77
+Info (10648): Verilog HDL Display System Task info at testbench.v(78):    Actual: sum = 0, cout = 0 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 78
+Info (10648): Verilog HDL Display System Task info at testbench.v(86): 5. ERROR: the output was wrong! File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 86
+Info (10648): Verilog HDL Display System Task info at testbench.v(87):    Expected: sum = 2, cout = 0 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 87
+Info (10648): Verilog HDL Display System Task info at testbench.v(88):    Actual: sum = 0, cout = 0 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 88
+Info (10648): Verilog HDL Display System Task info at testbench.v(91): 5. The output was correct! File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 91
+Info (10648): Verilog HDL Display System Task info at testbench.v(92):    Expected: sum = 2, cout = 0 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 92
+Info (10648): Verilog HDL Display System Task info at testbench.v(93):    Actual: sum = 0, cout = 0 File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 93
+Warning (10175): Verilog HDL warning at testbench.v(96): ignoring unsupported system task File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 96
 Info (12128): Elaborating entity "two_bit_adder" for hierarchy "two_bit_adder:dut" File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v Line: 12
 Info (12128): Elaborating entity "full_adder" for hierarchy "two_bit_adder:dut|full_adder:zero" File: /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/two_bit_adder.v Line: 23
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 3 warnings
     Info: Peak virtual memory: 1372 megabytes
-    Info: Processing ended: Wed Dec 23 12:49:10 2020
-    Info: Elapsed time: 00:00:24
-    Info: Total CPU time (on all processors): 00:00:47
+    Info: Processing ended: Wed Dec 23 15:43:07 2020
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:46
 
 

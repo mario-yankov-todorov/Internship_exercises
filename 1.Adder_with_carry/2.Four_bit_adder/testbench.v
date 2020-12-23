@@ -24,14 +24,14 @@ module testbench;
 		//Check that the initial values correspond to the expected ones
 		//and return a message
 		if (sum != 0 || cout != 0) begin
-			$display ("1. ERROR: the output was wrong!" );
-			$display ( "   Expected: sum = %0d, cout = %0d", 0, 0);
-			$display ( "   Actual: sum = %0d, cout = %0d", sum, cout);   		
+			$display ("1. ERROR: the output was wrong!");
+			$display ("   Expected: sum = %0d, cout = %0d", 0, 0);
+			$display ("   Actual: sum = %0d, cout = %0d", sum, cout);   		
 		end 
 		else begin
-			$display ("1. The output was correct!" );
-			$display ( "   Expected: sum = %0d, cout = %0d", 0, 0);
-			$display ( "   Actual: sum = %0d, cout = %0d", sum, cout);
+			$display ("1. The output was correct!");
+			$display ("   Expected: sum = %0d, cout = %0d", 0, 0);
+			$display ("   Actual: sum = %0d, cout = %0d", sum, cout);
 		end
 
 		a = 15;
@@ -39,14 +39,14 @@ module testbench;
 		cin = 0;
 		#10
 		if (sum != 14 || cout != 1) begin
-			$display ("2. ERROR: the output was wrong!" );
-			$display ( "   Expected: sum = %0d, cout = %0d", 14, 1);
-			$display ( "   Actual: sum = %0d, cout = %0d", sum, cout);   		
+			$display ("2. ERROR: the output was wrong!");
+			$display ("   Expected: sum = %0d, cout = %0d", 14, 1);
+			$display ("   Actual: sum = %0d, cout = %0d", sum, cout);   		
 		end 
 		else begin
-			$display ("2. The output was correct!" );
-			$display ( "   Expected: sum = %0d, cout = %0d", 14, 1);
-			$display ( "   Actual: sum = %0d, cout = %0d", sum, cout);
+			$display ("2. The output was correct!");
+			$display ("   Expected: sum = %0d, cout = %0d", 14, 1);
+			$display ("   Actual: sum = %0d, cout = %0d", sum, cout);
 		end
 
 		a = 15;
@@ -54,14 +54,14 @@ module testbench;
 		cin = 1;
 		#10
 		if (sum != 15 || cout != 1) begin
-			$display ("3. ERROR: the output was wrong!" );
-			$display ( "   Expected: sum = %0d, cout = %0d", 15, 1);
-			$display ( "   Actual: sum = %0d, cout = %0d", sum, cout);   		
+			$display ("3. ERROR: the output was wrong!");
+			$display ("   Expected: sum = %0d, cout = %0d", 15, 1);
+			$display ("   Actual: sum = %0d, cout = %0d", sum, cout);   		
 		end 
 		else begin
-			$display ("3. The output was correct!" );
-			$display ( "   Expected: sum = %0d, cout = %0d", 15, 1);
-			$display ( "   Actual: sum = %0d, cout = %0d", sum, cout);
+			$display ("3. The output was correct!");
+			$display ("   Expected: sum = %0d, cout = %0d", 15, 1);
+			$display ("   Actual: sum = %0d, cout = %0d", sum, cout);
 		end
 
 		a = 9;
@@ -69,14 +69,14 @@ module testbench;
 		cin = 1;
 		#10
 		if (sum != 4 || cout != 1) begin
-			$display ("4. ERROR: the output was wrong!" );
-			$display ( "   Expected: sum = %0d, cout = %0d", 4, 1);
-			$display ( "   Actual: sum = %0d, cout = %0d", sum, cout);   		
+			$display ("4. ERROR: the output was wrong!");
+			$display ("   Expected: sum = %0d, cout = %0d", 4, 1);
+			$display ("   Actual: sum = %0d, cout = %0d", sum, cout);   		
 		end 
 		else begin
-			$display ("4. The output was correct!" );
-			$display ( "   Expected: sum = %0d, cout = %0d", 4, 1);
-			$display ( "   Actual: sum = %0d, cout = %0d", sum, cout);
+			$display ("4. The output was correct!");
+			$display ("   Expected: sum = %0d, cout = %0d", 4, 1);
+			$display ("   Actual: sum = %0d, cout = %0d", sum, cout);
 		end
 
 		a = 7;
@@ -84,14 +84,14 @@ module testbench;
 		cin = 0;
 		#10 
 		if (sum != 0 || cout != 1) begin
-			$display ("5. ERROR: the output was wrong!" );
-			$display ( "   Expected: sum = %0d, cout = %0d", 0, 1);
-			$display ( "   Actual: sum = %0d, cout = %0d", sum, cout);   		
+			$display ("5. ERROR: the output was wrong!");
+			$display ("   Expected: sum = %0d, cout = %0d", 0, 1);
+			$display ("   Actual: sum = %0d, cout = %0d", sum, cout);   		
 		end 
 		else begin
-			$display ("5. The output was correct!" );
-			$display ( "   Expected: sum = %0d, cout = %0d", 0, 1);
-			$display ( "   Actual: sum = %0d, cout = %0d", sum, cout);
+			$display ("5. The output was correct!");
+			$display ("   Expected: sum = %0d, cout = %0d", 0, 1);
+			$display ("   Actual: sum = %0d, cout = %0d", sum, cout);
 		end 
 		$finish;
 

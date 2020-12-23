@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 d/home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/simulation/modelsim
 vfull_adder
-Z1 !s110 1608720565
+Z1 !s110 1608731001
 !i10b 1
 !s100 :bPY[La_ikQd^RKje[1mY2
 IQel0G3N9YQnE[2o<zKT=i1
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1608720565.000000
+Z7 !s108 1608731000.000000
 Z8 !s107 /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/two_bit_adder.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder|/home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/two_bit_adder.v|
 !i113 1
@@ -31,13 +31,13 @@ Z10 o-vlog01compat -work work
 Z11 !s92 -vlog01compat -work work +incdir+/home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder
 Z12 tCvgOpt 0
 vtestbench
-!s110 1608720566
+!s110 1608731002
 !i10b 1
-!s100 ^f=nF[beK=MRNPg]SzHg10
-I7Df<NL<O8885MO]dCKA=<3
+!s100 _BHznaiMC=FYI<Zh4_^iO3
+Iz]fL65fz<46DdMkAP0WMW1
 R2
 R0
-w1608720502
+w1608730854
 8/home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v
 F/home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v
 L0 2
@@ -45,7 +45,7 @@ R6
 r1
 !s85 0
 31
-!s108 1608720566.000000
+!s108 1608731001.000000
 !s107 /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder|/home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/1.Two_bit_adder/testbench.v|
 !i113 1
