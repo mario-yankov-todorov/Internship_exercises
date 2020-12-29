@@ -1,28 +1,28 @@
-//This is testbench for four bit adder
+// This is testbench for four bit adder
 module testbench;
 
-	//Declare registers
+	// Declare registers
 	reg [3:0] a, b;
 	reg cin;
 
-	//Declare wires	
+	// Declare wires	
 	wire [3:0] sum;
 	wire cout;
 	
-	//Create instance of four_bit_adder module
+	// Create instance of four_bit_adder module
 	four_bit_adder dut (.a(a), .b(b), .cin(cin), .sum(sum), .cout(cout));
 
-//Tests	
+// Tests	
 	initial begin
 		$dumpvars (1, testbench);
 		
-      //Assign the specified values to the variables
+      // Assign the specified values to the variables
 		a = 0;
 		b = 0;
 		cin = 0;	
-		#10 //Set a delay of ten time units
-		//Check that the initial values correspond to the expected ones
-		//and return a message
+		#10 // Set a delay of ten time units
+		// Check that the initial values correspond to the expected ones
+		// and return a message
 		if (sum != 0 || cout != 0) begin
 			$display ("1. ERROR: the output was wrong!");
 			$display ("   Expected: sum = %0d, cout = %0d", 0, 0);

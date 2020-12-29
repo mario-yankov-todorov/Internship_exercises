@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 d/home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/3.Eight_bit_adder/simulation/modelsim
 veight_bit_adder
-Z1 !s110 1608739862
+Z1 !s110 1609232970
 !i10b 1
 !s100 G>:g3lTOSOCfKk9KD`UKE1
 Ie<]hDfg@`iD:nk]DJiU3M0
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1608739861.000000
+Z7 !s108 1609232970.000000
 Z8 !s107 /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/3.Eight_bit_adder/eight_bit_adder.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/3.Eight_bit_adder|/home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/3.Eight_bit_adder/eight_bit_adder.v|
 !i113 1
@@ -53,13 +53,13 @@ R10
 R11
 R12
 vtestbench
-!s110 1608739863
+!s110 1609232971
 !i10b 1
-!s100 a_[CgjcG@ciAYL>gPF1lo0
-IkXgI]VmDEHemmV]_T50[m0
+!s100 :k1Jdo`CQ_EM<f7[lEfi[3
+I=W@ZKWYPPnH;3P81kDV3C1
 R2
 R0
-w1608739801
+w1609232903
 8/home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/3.Eight_bit_adder/testbench.v
 F/home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/3.Eight_bit_adder/testbench.v
 L0 2
@@ -67,7 +67,7 @@ R6
 r1
 !s85 0
 31
-!s108 1608739863.000000
+!s108 1609232971.000000
 !s107 /home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/3.Eight_bit_adder/testbench.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/3.Eight_bit_adder|/home/mtodorov/Documents/Internship_exercises/1.Adder_with_carry/3.Eight_bit_adder/testbench.v|
 !i113 1

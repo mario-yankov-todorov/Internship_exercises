@@ -1,10 +1,10 @@
-// Create module full_adder
+//Create module full_adder
 module full_adder (input a, b, cin, output cout, sum);
 
-	// Declare wires for full adder
+	//Declare wires for full adder
 	wire half_carry_ab, half_sum, half_carry_cin;
 
-	// Create logic gates
+	//Create logic gates
 	and (half_carry_ab, a, b);
 	xor (half_sum, a, b);
 	and (half_carry_cin, half_sum, cin);
@@ -13,13 +13,13 @@ module full_adder (input a, b, cin, output cout, sum);
 
 endmodule
 
-// Create module for eight bit adder 
+//Create module for eight bit adder 
 module eight_bit_adder (input [7:0] a, b, input cin, output [7:0] sum, output cout);
 
-	// Declare wires for eight bit adder
+	//Declare wires for eight bit adder
 	wire [6:0] carry;
 			
-	// Make instances of full_adder module to create eight bit adder
+	//Make instances of full_adder module to create eight bit adder
 	full_adder zero(.a(a[0]), .b(b[0]), .cin(cin), .sum(sum[0]), .cout(carry[0]));
 	full_adder one(.a(a[1]), .b(b[1]), .cin(carry[0]), .sum(sum[1]), .cout(carry[1]));
 	full_adder two(.a(a[2]), .b(b[2]), .cin(carry[1]), .sum(sum[2]), .cout(carry[2]));
