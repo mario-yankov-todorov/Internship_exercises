@@ -57,9 +57,9 @@ module testbench;
 		b = 255;
 		cin = 1;
 		@(sum);	// Wait for the sum output value to be calculated
-		               // Here we wait for the sum output to change 
-							// because the value of cout does not change 
-							// since the previous check
+			// Here we wait for the sum output to change 
+			// because the value of cout does not change 
+			// since the previous check
 			
 		if (sum != 255 || cout != 1) begin
 			$display ("3. ERROR: the output was wrong!");
