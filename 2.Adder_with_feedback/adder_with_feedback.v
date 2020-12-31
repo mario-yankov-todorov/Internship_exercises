@@ -5,19 +5,19 @@ module adder_with_feedback
         input    [16    -1:0]    in        ,
         output   [16    -1:0]    out       ,
         input                    reset     , 
-        input                    clock   
+        input                    clk   
      );
         // ------------------------------------------------------------------------------
         // Wire and register
         wire     [16    -1:0]    sum       ;
-		  reg      [16    -1:0]    register  ;
+        reg      [16    -1:0]    register  ;
         // Assignments
         assign   out    = register         ;
         assign   sum    = in + register    ;
         
 		  // ------------------------------------------------------------------------------
         // Procedural block
-        always   @    (posedge clock)
+        always   @    (posedge clk)
             begin
                 if  (reset      == 1)
                     register    <= 0       ;
