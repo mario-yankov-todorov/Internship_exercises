@@ -15,7 +15,7 @@ module adder_with_feedback
         assign   out    = register         ;
         assign   sum    = in + register    ;
         
-		  // ------------------------------------------------------------------------------
+        // ------------------------------------------------------------------------------
         // Procedural block
         always   @    (posedge clk)
             begin
