@@ -20,7 +20,6 @@ module testbench;
         // Presets
         initial begin
             $dumpvars    ( 1, test )    ;
-				
             clock        = 0            ;
             reset        = 1            ;
         end	
