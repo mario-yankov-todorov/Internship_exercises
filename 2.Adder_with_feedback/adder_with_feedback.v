@@ -10,19 +10,19 @@ module adder_with_feedback
         // ------------------------------------------------------------------------------
         // Wire and register
         wire     [16    -1:0]    sum       ;
-        reg      [16    -1:0]    register  ;
+        reg      [16    -1:0]    reg_1     ;
         // Assignments
-        assign   out    = register         ;
-        assign   sum    = in + register    ;
-        
+        assign   out    = reg_1            ;
+        assign   sum    = in + out         ;
+
         // ------------------------------------------------------------------------------
         // Procedural block
         always   @    (posedge clk)
             begin
                 if  (reset      == 1)
-                    register    <= 0       ;
+                    reg_1    <= 0       ;
                 else
-                    register    <= sum     ;
+                    reg_1    <= sum     ;
             end
 		  
 endmodule

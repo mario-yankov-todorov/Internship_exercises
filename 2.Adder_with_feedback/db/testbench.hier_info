@@ -1,0 +1,70 @@
+|testbench
+
+
+|testbench|adder_with_feedback:dut
+in[0] => Add0.IN16
+in[1] => Add0.IN15
+in[2] => Add0.IN14
+in[3] => Add0.IN13
+in[4] => Add0.IN12
+in[5] => Add0.IN11
+in[6] => Add0.IN10
+in[7] => Add0.IN9
+in[8] => Add0.IN8
+in[9] => Add0.IN7
+in[10] => Add0.IN6
+in[11] => Add0.IN5
+in[12] => Add0.IN4
+in[13] => Add0.IN3
+in[14] => Add0.IN2
+in[15] => Add0.IN1
+out[0] <= reg_1[0].DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= reg_1[1].DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= reg_1[2].DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= reg_1[3].DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= reg_1[4].DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= reg_1[5].DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= reg_1[6].DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= reg_1[7].DB_MAX_OUTPUT_PORT_TYPE
+out[8] <= reg_1[8].DB_MAX_OUTPUT_PORT_TYPE
+out[9] <= reg_1[9].DB_MAX_OUTPUT_PORT_TYPE
+out[10] <= reg_1[10].DB_MAX_OUTPUT_PORT_TYPE
+out[11] <= reg_1[11].DB_MAX_OUTPUT_PORT_TYPE
+out[12] <= reg_1[12].DB_MAX_OUTPUT_PORT_TYPE
+out[13] <= reg_1[13].DB_MAX_OUTPUT_PORT_TYPE
+out[14] <= reg_1[14].DB_MAX_OUTPUT_PORT_TYPE
+out[15] <= reg_1[15].DB_MAX_OUTPUT_PORT_TYPE
+reset => reg_1.OUTPUTSELECT
+reset => reg_1.OUTPUTSELECT
+reset => reg_1.OUTPUTSELECT
+reset => reg_1.OUTPUTSELECT
+reset => reg_1.OUTPUTSELECT
+reset => reg_1.OUTPUTSELECT
+reset => reg_1.OUTPUTSELECT
+reset => reg_1.OUTPUTSELECT
+reset => reg_1.OUTPUTSELECT
+reset => reg_1.OUTPUTSELECT
+reset => reg_1.OUTPUTSELECT
+reset => reg_1.OUTPUTSELECT
+reset => reg_1.OUTPUTSELECT
+reset => reg_1.OUTPUTSELECT
+reset => reg_1.OUTPUTSELECT
+reset => reg_1.OUTPUTSELECT
+clk => reg_1[0].CLK
+clk => reg_1[1].CLK
+clk => reg_1[2].CLK
+clk => reg_1[3].CLK
+clk => reg_1[4].CLK
+clk => reg_1[5].CLK
+clk => reg_1[6].CLK
+clk => reg_1[7].CLK
+clk => reg_1[8].CLK
+clk => reg_1[9].CLK
+clk => reg_1[10].CLK
+clk => reg_1[11].CLK
+clk => reg_1[12].CLK
+clk => reg_1[13].CLK
+clk => reg_1[14].CLK
+clk => reg_1[15].CLK
+
+
