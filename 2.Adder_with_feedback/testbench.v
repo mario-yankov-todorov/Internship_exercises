@@ -54,7 +54,7 @@ module testbench                         ;
 		  
 		  always    @    ( in or out or clk )    begin
 		  
-		   //    #0   !!!  clk = 0  !!!
+         //    #0   !!!  clk = 0  !!!
 	
          #49
           in       =    16'd    18    ; //    #49  clk =   0    reset =   0
