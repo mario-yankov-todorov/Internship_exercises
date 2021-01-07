@@ -1,5 +1,5 @@
 $date
-	Thu Jan  7 11:23:37 2021
+	Thu Jan  7 19:07:09 2021
 $end
 $version
 	ModelSim Version 10.5b
@@ -28,6 +28,18 @@ $var wire 1 0 out [1] $end
 $var wire 1 1 out [0] $end
 $var reg 1 2 reset $end
 $var reg 1 3 clk $end
+
+$scope task print_the_values $end
+$var reg 4 4 print_number [3:0] $end
+$var reg 1 5 clk_expected $end
+$var reg 1 6 reset_expected $end
+$var reg 16 7 in_expected [15:0] $end
+$var reg 16 8 out_expected [15:0] $end
+$var reg 1 9 clk_actual $end
+$var reg 1 : reset_actual $end
+$var reg 16 ; in_actual [15:0] $end
+$var reg 16 < out_actual [15:0] $end
+$upscope $end
 $upscope $end
 $enddefinitions $end
 #0
@@ -35,6 +47,15 @@ $dumpvars
 b101 !
 12
 13
+bx 4
+x5
+x6
+bx 7
+bx 8
+x9
+x:
+bx ;
+bx <
 01
 00
 0/
@@ -60,5 +81,39 @@ $end
 13
 11
 1/
+b1 4
+15
+06
+b101 7
+b101 8
+19
+0:
+b101 ;
+b101 <
 #150000
+03
+#200000
+13
+01
+10
+0/
+1.
+b10 4
+b1010 8
+b1010 <
+#250000
+03
+#300000
+b11001000 !
+13
+0.
+1-
+1+
+1*
+b11 4
+b11001000 7
+b11010010 8
+b11001000 ;
+b11010010 <
+#350000
 03
