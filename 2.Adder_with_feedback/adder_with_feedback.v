@@ -19,7 +19,7 @@ module adder_with_feedback
         // Procedural block
         always   @    (posedge clk)
             begin
-                if  (reset      == 1)
+                if  (reset   == 1)
                     reg_1    <= 0       ;
                 else
                     reg_1    <= sum     ;
