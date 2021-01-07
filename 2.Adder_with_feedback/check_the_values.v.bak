@@ -1,0 +1,55 @@
+module   check_the_values()                      ;
+      
+    task print_the_values                        ;
+	 
+	 
+	 
+        input    clk_expected                    ;
+        input    reset_expected                  ;
+		  input    in_expected                     ;
+		  input    out_expected                    ;
+		  
+		  input    clk_actual                      ;
+		  input    reset_actual                    ;
+		  input    in_actual                       ;
+		  input    out_actual                      ;
+		  
+            if ( clk != 1 || reset != 0 || in != 5 || out != 5) begin
+				  
+                  $display ()                                        ;
+                  $display ("1. ERROR: the values were wrong!")      ;
+                  $display ()                                        ;
+                  $display ("   Expected: clk = %0d  reset = %0d" ,
+                             1,  0)                                  ;
+                  $display ("             in  = %0d  out   = %0d" ,
+                             5,  5)                                  ;
+                  $display ()                                        ;
+                  $display ("   Actual:   clk = %0d, reset = %0d" , 
+                            clk, reset)                              ;
+                  $display ("             in  = %0d, out   = %0d" ,
+                            in, out)                                 ;
+                  $display ()                                        ;
+						
+                 end 
+					  
+            else begin
+				  
+                  $display ()                                        ;
+                  $display ("1. The values were correct!")           ;
+                  $display ()                                        ;
+                  $display ("   Expected: clk = %0d  reset = %0d" ,
+                             1,  0)                                  ;
+                  $display ("             in  = %0d  out   = %0d" ,
+                             5,  5)                                  ;
+                  $display ()                                        ;
+                  $display ("   Actual:   clk = %0d, reset = %0d" , 
+                            clk, reset)                              ;
+                  $display ("             in  = %0d, out   = %0d" ,
+                            in, out)                                 ;
+                  $display ()                                        ;
+						
+                 end
+				  
+    endtask
+		  
+endmodule

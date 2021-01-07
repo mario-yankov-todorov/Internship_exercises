@@ -9,6 +9,8 @@ module testbench                         ;
         reg                    reset     ;
         reg                    clk       ;
 		  
+		  `include "check_the_values.sv"
+		  
         // ---------------------------------------------------------------
         // Create instance of adder_with_feedback module
         adder_with_feedback    dut    
@@ -40,7 +42,7 @@ module testbench                         ;
                                // any time multiple of 100 the clock
                                // will be equal back to 1. And after 
                                // 50 simulation time units (#50), it
-                               // will be equal back to 0).
+                               // will be equal back to 0.
 
         // And this way, according to adder_with_feedback.v file, we save
         // the current sum from adder to the register, at the moment when
@@ -86,41 +88,10 @@ module testbench                         ;
           @     (out)                ; //     out   =   0(out) +   5(in)
                                        //     out   =   5
          // --------------------------------------------------------------
-		  
-             if ( clk != 1 || reset != 0 || in != 5 || out != 5) begin
-				  
-                  $display ()                                        ;
-                  $display ("1. ERROR: the values were wrong!")      ;
-                  $display ()                                        ;
-                  $display ("   Expected: clk = %0d  reset = %0d" ,
-                             1,  0)                                  ;
-                  $display ("             in  = %0d  out   = %0d" ,
-                             5,  5)                                  ;
-                  $display ()                                        ;
-                  $display ("   Actual:   clk = %0d, reset = %0d" , 
-                            clk, reset)                              ;
-                  $display ("             in  = %0d, out   = %0d" ,
-                            in, out)                                 ;
-                  $display ()                                        ;
-						
-              end 
-              else begin
-				  
-                  $display ()                                        ;
-                  $display ("1. The output was correct!")            ;
-                  $display ()                                        ;
-                  $display ("   Expected: clk = %0d  reset = %0d" ,
-                             1,  0)                                  ;
-                  $display ("             in  = %0d  out   = %0d" ,
-                             5,  5)                                  ;
-                  $display ()                                        ;
-                  $display ("   Actual:   clk = %0d, reset = %0d" , 
-                            clk, reset)                              ;
-                  $display ("             in  = %0d, out   = %0d" ,
-                            in, out)                                 ;
-                  $display ()                                        ;
-						
-              end
+		    begin
+		        print_the_values(1, 1, 0, 5, 5, clk, reset, in, out);
+			 end
+         
          // --------------------------------------------------------------
 	  
          #100 // At time 200 - stop the tests 
