@@ -51,6 +51,7 @@ module FIFO
             // save input data in memory at the indicated position
             fifo_ram [wr_pointer]   <=  data_in                     ;
 
+    // READ BLOCK
     always  @   (posedge clk)   begin:  read
         // If read is enabled and empty is not true
         if      (rd == 1  &&  empty == 0)
