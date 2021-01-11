@@ -40,27 +40,8 @@ module FIFO
     // Procedural blocks        Procedural blocks        Procedural blocks 
     // --------------------------------------------------------------------
 
-    // WRITE BLOCK
-    always  @   (posedge clk)   begin:  write
-        // If write is enabled and full is not true
-        if      (wr == 1  &&  full == 0)
-            // save input data in memory at the indicated position
-            fifo_ram [wr_pointer]   <=  data_in                     ;
-        // If write is enabled and in the same time read is enabled
-        else if (wr == 1  &&  rd == 0)
-            // save input data in memory at the indicated position
-            fifo_ram [wr_pointer]   <=  data_in                     ;
-
-    always  @   (posedge clk)   begin:  read
-        // If read is enabled and empty is not true
-        if      (rd == 1  &&  empty == 0)
-            // get the output from the indicated position in the memory
-            data_out    <=  fifo_ram [rd_pointer]                   ;
-        // If write is enabled and in the same time read is enabled
-        else if (wr == 1  &&  rd == 1)
-            // get the output from the indicated position in the memory
-            data_out    <=  fifo_ram [rd_pointer]                   ;
-            
-
+	 
+	 
+	 
 
 endmodule
