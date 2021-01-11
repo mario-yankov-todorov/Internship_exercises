@@ -50,7 +50,7 @@ module FIFO
         else if (wr == 1  &&  rd == 0)
             // save input data in memory at the indicated position
             fifo_ram [wr_pointer]   <=  data_in                     ;
-
+    
     // READ BLOCK
     always  @   (posedge clk)   begin:  read
         // If read is enabled and empty is not true
@@ -61,8 +61,36 @@ module FIFO
         else if (wr == 1  &&  rd == 1)
             // get the output from the indicated position in the memory
             data_out    <=  fifo_ram [rd_pointer]                   ;
-            
+
+    // POINTER BLOCK                    
+    always  @   (posedge clk) begin: pointer
+        if (reset == 1) begin // If reset is enabled
+            wr_pointer  <=  0; // reset write counter (pointer)
+            rd_pointer  <=  0; // and reset read counter (pointer)
+            end
+        else  begin
+            // If write is enabled and full is not true
+            // or both write and read are enabled
+            if (  (wr == 1  &&  full == 0)  ||  (wr == 1  &&  rd  == 1)  ) 
+                // increase write counter (pointer)
+                wr_pointer  <=  wr_pointer + 1;
+            else
+                // Otherwise let the counter value remain the same
+                wr_pointer  <=  wr_pointer;
+            // If read is enabled and empty is not true
+            // or both write and read are enabled
+            if (  (rd == 1  &&  empty == 0)  ||  (wr == 1  &&  rd  == 1)  ) 
+                // increase write counter (pointer)
+                wr_pointer  <=  wr_pointer + 1;
+            else  
+                // Otherwise let the counter value remain the same
+                wr_pointer  <=  wr_pointer;
+            end
+				
+				
 
 				// !!! IN PROGRESS !!!
+
+    
 
 endmodule
