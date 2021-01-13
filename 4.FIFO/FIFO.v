@@ -102,11 +102,13 @@ module FIFO
         else begin
             // Concatenate write and read pointer (counter)
             case ((wr_pointer,rd_pointer))
-                // If write is not enabled and read is not enabled
+
+                // Case 1: If write is not enabled and read is not enabled
                 // the value of memory tarcking counter remains the same
                 // (because nothing happens)
-                2'b     00  :   fifo_counter    <=    fifo_counter         ;                
-                // If write is not enabled and read is enabled
+                2'b     00  :   fifo_counter    <=    fifo_counter         ;
+
+                // Case 2: If write is not enabled and read is enabled
                                 // If there is nothing in memory
                 2'b     01  :   if (fifo_counter  ==  0)
                                 // let the counter value remains the zero
@@ -116,7 +118,7 @@ module FIFO
                                 // reduce the counter by one                              
                                 fifo_counter    <=    fifo_counter  -  1   ;
 
-                // If write is enabled and read is not enabled
+                // Case 3: If write is enabled and read is not enabled
                                 // If counter is equal to eight (is full)                                
                 2'b     10  :   if (fifo_counter  ==  8)
                                 // let the counter value remains the same
@@ -125,10 +127,11 @@ module FIFO
                                 // If memory tracking counter is not full
                                 // increase its value by one unit                            
                                 fifo_counter    <=    fifo_counter  +  1   ;
-                // If write is enabled and read is also enabled
+
+                // Case 4: If write is enabled and read is also enabled
                 // the value of memory tarcking counter remains the same
                 // (because one word enters and at the same time another
-                //  word leaves the FIFO memory)
+                // word leaves the FIFO memory)
                 2'b     11  :   fifo_counter    <=    fifo_counter         ;
         end      
     end 
