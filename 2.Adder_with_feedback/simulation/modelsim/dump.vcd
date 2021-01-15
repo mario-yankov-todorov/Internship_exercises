@@ -1,5 +1,5 @@
 $date
-	Thu Jan  7 19:07:09 2021
+	Thu Jan 14 16:52:27 2021
 $end
 $version
 	ModelSim Version 10.5b
@@ -26,11 +26,11 @@ $var wire 1 . out [3] $end
 $var wire 1 / out [2] $end
 $var wire 1 0 out [1] $end
 $var wire 1 1 out [0] $end
-$var reg 1 2 reset $end
-$var reg 1 3 clk $end
+$var reg 1 2 clk $end
+$var reg 1 3 reset $end
 
-$scope task print_the_values $end
-$var reg 4 4 print_number [3:0] $end
+$scope task display_the_values $end
+$var reg 4 4 display_number [3:0] $end
 $var reg 1 5 clk_expected $end
 $var reg 1 6 reset_expected $end
 $var reg 16 7 in_expected [15:0] $end
@@ -74,11 +74,11 @@ bx <
 0"
 $end
 #25000
-02
-#50000
 03
+#50000
+02
 #100000
-13
+12
 11
 1/
 b1 4
@@ -91,9 +91,9 @@ b101 8
 b101 ;
 b101 <
 #150000
-03
+02
 #200000
-13
+12
 01
 10
 0/
@@ -102,10 +102,10 @@ b10 4
 b1010 8
 b1010 <
 #250000
-03
+02
 #300000
 b11001000 !
-13
+12
 0.
 1-
 1+
@@ -116,4 +116,4 @@ b11010010 8
 b11001000 ;
 b11010010 <
 #350000
-03
+02

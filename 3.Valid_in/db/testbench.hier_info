@@ -1,0 +1,17 @@
+|testbench
+
+
+|testbench|valid_in_state_machine:dut
+clk => out~reg0.CLK
+clk => state~1.DATAIN
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => out.OUTPUTSELECT
+btn => out.DATAB
+btn => Selector1.IN2
+btn => Selector0.IN1
+out <= out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+state_test[0] <= state_test[0].DB_MAX_OUTPUT_PORT_TYPE
+state_test[1] <= state_test[1].DB_MAX_OUTPUT_PORT_TYPE
+
+

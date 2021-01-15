@@ -1,0 +1,163 @@
+$date
+	Fri Jan 15 15:07:08 2021
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module testbench $end
+$var reg 1 ! clk $end
+$var reg 1 " rst $end
+$var reg 1 # btn $end
+$var wire 1 $ out $end
+$var wire 1 % state_test [1] $end
+$var wire 1 & state_test [0] $end
+
+$scope task display_the_values $end
+$var reg 4 ' statement_number [3:0] $end
+$var reg 1 ( clk_expected $end
+$var reg 1 ) rst_expected $end
+$var reg 16 * btn_expected [15:0] $end
+$var reg 16 + out_expected [15:0] $end
+$var reg 2 , state_test_expected [1:0] $end
+$var reg 1 - clk_actual $end
+$var reg 1 . rst_actual $end
+$var reg 16 / btn_actual [15:0] $end
+$var reg 16 0 out_actual [15:0] $end
+$var reg 2 1 state_test_actual [1:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+1"
+1#
+bx '
+x(
+x)
+bx *
+bx +
+bx ,
+x-
+x.
+bx /
+bx 0
+bx 1
+0$
+0&
+0%
+$end
+#50000
+0!
+#100000
+1!
+#101000
+b1 '
+1(
+1)
+b1 *
+b0 +
+b0 ,
+1-
+1.
+b1 /
+b0 0
+b0 1
+#150000
+0!
+#151000
+0"
+#200000
+1!
+1&
+1$
+#201000
+b10 '
+0)
+b1 +
+b1 ,
+0.
+b1 0
+b1 1
+#250000
+0!
+#300000
+1!
+0&
+1%
+0$
+#301000
+b11 '
+b0 +
+b10 ,
+b0 0
+b10 1
+#350000
+0!
+#400000
+1!
+#401000
+b100 '
+#450000
+0!
+#451000
+0#
+#500000
+1!
+0%
+#501000
+b101 '
+b0 *
+b0 ,
+b0 /
+b0 1
+#550000
+0!
+#551000
+1#
+#600000
+1!
+1&
+1$
+#601000
+b110 '
+b1 *
+b1 +
+b1 ,
+b1 /
+b1 0
+b1 1
+#650000
+0!
+#651000
+0#
+#700000
+1!
+0&
+1%
+0$
+#701000
+b111 '
+b0 *
+b0 +
+b10 ,
+b0 /
+b0 0
+b10 1
+#750000
+0!
+#800000
+1!
+0%
+#801000
+b1000 '
+b0 ,
+b0 1
+#850000
+0!
+#900000
+1!
