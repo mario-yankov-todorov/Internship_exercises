@@ -2,7 +2,7 @@
 
 module testbench                            ;
     // -------------------------------------------------------------------
-    // Registers and wire
+    // Registers and wires
     reg                     clk             ;   // Clock
     reg                     rst             ;   // Reset
     reg                     btn             ;   // Button
