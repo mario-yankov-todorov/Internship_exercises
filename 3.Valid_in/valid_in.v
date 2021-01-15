@@ -1,7 +1,7 @@
 module valid_in_state_machine
     (
         // ----------------------------------------------------------------
-        // Inputs and output 
+        // Inputs and outputs 
         input                       clk             ,   // Clock
         input                       rst             ,   // Reset  		  
         input                       btn             ,   // Button
