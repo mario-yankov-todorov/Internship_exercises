@@ -9,46 +9,46 @@ z2
 cModel Technology
 Z0 d/home/mtodorov/Documents/Internship_exercises/4.FIFO/simulation/modelsim
 vfifo
-!s110 1610976464
+Z1 !s110 1611053874
 !i10b 1
-!s100 CD2Zd;ZR]kD4=89TFB]1I2
-IV0WkM5>?3a`<nRKFSeg2m2
-Z1 VDg1SIo80bB@j0V0VzS_@n1
+!s100 N`inDAF=b0]_CP>?d6PkC1
+IWT@AM8lS8djdoVQ;9XDL01
+Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1610975109
+w1611048709
 8/home/mtodorov/Documents/Internship_exercises/4.FIFO/FIFO.v
 F/home/mtodorov/Documents/Internship_exercises/4.FIFO/FIFO.v
-L0 1
-Z2 OV;L;10.5b;63
+L0 3
+Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-!s108 1610976464.000000
+!s108 1611053873.000000
 !s107 /home/mtodorov/Documents/Internship_exercises/4.FIFO/FIFO.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/mtodorov/Documents/Internship_exercises/4.FIFO|/home/mtodorov/Documents/Internship_exercises/4.FIFO/FIFO.v|
 !i113 1
-Z3 o-vlog01compat -work work
-Z4 !s92 -vlog01compat -work work +incdir+/home/mtodorov/Documents/Internship_exercises/4.FIFO
-Z5 tCvgOpt 0
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work +incdir+/home/mtodorov/Documents/Internship_exercises/4.FIFO
+Z6 tCvgOpt 0
 vtestbench
-!s110 1610976465
-!i10b 1
-!s100 kVY6Yn^QHF96_P^JdY^jh0
-I60TCoD7iXj8YHXE3QfOUM3
 R1
+!i10b 1
+!s100 W9o`Zl?2GUMB>ZY]KW[<H0
+I9DP<aE]CiIFP]zgRPSMoI2
+R2
 R0
-w1610976404
+w1611053815
 8/home/mtodorov/Documents/Internship_exercises/4.FIFO/testbench.v
 F/home/mtodorov/Documents/Internship_exercises/4.FIFO/testbench.v
 L0 3
-R2
+R3
 r1
 !s85 0
 31
-!s108 1610976465.000000
+!s108 1611053874.000000
 !s107 /home/mtodorov/Documents/Internship_exercises/4.FIFO/testbench.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/mtodorov/Documents/Internship_exercises/4.FIFO|/home/mtodorov/Documents/Internship_exercises/4.FIFO/testbench.v|
 !i113 1
-R3
 R4
 R5
+R6

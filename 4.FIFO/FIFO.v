@@ -1,3 +1,5 @@
+`timescale 1ns/100ps
+
 module fifo
     (
         // ----------------------------------------------------------------
@@ -8,33 +10,72 @@ module fifo
         // Input to enable writing
         input                               wr_en               ,
         // Input to enable reading
-        input                               rd_en               ,
+        input                               rd_en               ,   
 
         // OUTPUTS
+        // Output for reading data from memory
+        output reg     [32      -1:0]       data_out            ,
+        
         // Output to indicate if the memory is empty
         output                              empty               ,
         // Output to indicate if the memory is full
         output                              full                ,
-        // Output for tracking the number of words in memory                  
-        output reg      [4      -1:0]       fifo_counter        ,
-        // Output for reading data from memory
-        output reg     [32      -1:0]       data_out            
-        		  		  
+        // Output for test fifo_counter register                  
+        output          [4      -1:0]       fifo_count          ,
+        // Output for test wr_pointer register
+        output          [3      -1:0]       wr_ptr              ,
+        // Output for test rd_pointer register
+        output          [3      -1:0]       rd_ptr              ,
+
+        // Output for test fifo_ram[0]
+        output          [8      -1:0]       fifo_ram_0          ,
+        // Output for test fifo_ram[1]
+        output          [8      -1:0]       fifo_ram_1          ,
+        // Output for test fifo_ram[2]
+        output          [8      -1:0]       fifo_ram_2          ,
+        // Output for test fifo_ram[3]
+        output          [8      -1:0]       fifo_ram_3          ,
+        // Output for test fifo_ram[4]
+        output          [8      -1:0]       fifo_ram_4          ,
+        // Output for test fifo_ram[5]
+        output          [8      -1:0]       fifo_ram_5          ,
+        // Output for test fifo_ram[6]
+        output          [8      -1:0]       fifo_ram_6          ,
+        // Output for test fifo_ram[7]
+        output          [8      -1:0]       fifo_ram_7          
+            		  		  
     );
 
         // ----------------------------------------------------------------
         // REGS
-        // Register for store eight 32 bits words
-        reg            [32      -1:0]       fifo_ram        [0:7]   ;
+        // Register for tracking the number of words in memory                  
+        reg             [4      -1:0]       fifo_counter    =   4'b 0000   ;
         // Pointer to indicate where the next word should be written
-        reg             [3      -1:0]       wr_pointer              ;
+        reg             [3      -1:0]       wr_pointer      =   3'b 000   ;
         // Pointer - from which cell the next word should be read
-        reg             [3      -1:0]       rd_pointer              ;
+        reg             [3      -1:0]       rd_pointer      =   3'b 000   ;
+        // Register for store eight 32 bits words
+        reg            [32      -1:0]       fifo_ram            [0:7]   ;
+        
 
         // ----------------------------------------------------------------
-        // Assigments
-        assign  empty   =   (fifo_counter   ==  0)                  ;
-        assign  full    =   (fifo_counter   ==  8)                  ;
+        // Assigments 
+        assign  empty           =   (fifo_counter   ==  0)                  ;
+        assign  full            =   (fifo_counter   ==  8)                  ;
+        assign  fifo_count      =   fifo_counter                            ;
+        assign  wr_ptr          =   wr_pointer                              ;
+        assign  rd_ptr          =   rd_pointer                              ;
+
+        // ----------------------------------------------------------------
+        // Memory tracking
+        assign  fifo_ram_0          =   fifo_ram[0]                         ;
+        assign  fifo_ram_1          =   fifo_ram[1]                         ;
+        assign  fifo_ram_2          =   fifo_ram[2]                         ;
+        assign  fifo_ram_3          =   fifo_ram[3]                         ;
+        assign  fifo_ram_4          =   fifo_ram[4]                         ;
+        assign  fifo_ram_5          =   fifo_ram[5]                         ;
+        assign  fifo_ram_6          =   fifo_ram[6]                         ;
+        assign  fifo_ram_7          =   fifo_ram[7]                         ;
 
 
     // --------------------------------------------------------------------
@@ -46,7 +87,7 @@ module fifo
     // WRITE BLOCK
     always  @   (posedge clk)   begin:  write
         // If write is enabled and full is not true
-        if      (wr_en == 1  &&  full == 0)
+        if      (wr_en == 1  &&  full != 1)
             // save input data in memory at the indicated position
             fifo_ram [wr_pointer]   <=  data_in                         ;
         // If write is enabled and in the same time read is enabled
@@ -57,9 +98,9 @@ module fifo
 
     // --------------------------------------------------------------------
     // READ BLOCK
-    always  @   (posedge clk)   begin:  read
+    always  @   (posedge clk )   begin:  read
         // If read is enabled and empty is not true
-        if      (rd_en == 1  &&  empty == 0)
+        if      (rd_en == 1  &&  empty != 1)
             // get the output from the indicated position in the memory
             data_out    <=  fifo_ram [rd_pointer]                       ;
         // If write is enabled and in the same time read is enabled
