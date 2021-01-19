@@ -131,7 +131,7 @@ module testbench                            ;
     endtask
 
     // -------------------------------------------------------------------
-    // Create instance of valid_in_state_machine module
+    // Create instance of fifo module
     fifo    dut 
     (   
             .clk            (clk)           ,	  
@@ -431,6 +431,8 @@ module testbench                            ;
                         fifo_ram_3,             fifo_ram_4,             fifo_ram_5)             ;
             $display (" fifo_ram_6    = %0d   fifo_ram_7    = %0d"                        , 
                         fifo_ram_6,             fifo_ram_7)                                     ;
+            $display()                                                                          ;
+            $display()                                                                          ;
 
 		    $finish;
 
