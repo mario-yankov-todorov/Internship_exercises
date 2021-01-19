@@ -1,0 +1,190 @@
+$date
+	Tue Jan 19 18:42:38 2021
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module testbench $end
+$var reg 1 ! clk $end
+$var reg 1 " rst $end
+$var reg 1 # button $end
+$var reg 1 $ wr_en $end
+$var reg 1 % rd_en $end
+$var wire 1 & concatenated_out [31] $end
+$var wire 1 ' concatenated_out [30] $end
+$var wire 1 ( concatenated_out [29] $end
+$var wire 1 ) concatenated_out [28] $end
+$var wire 1 * concatenated_out [27] $end
+$var wire 1 + concatenated_out [26] $end
+$var wire 1 , concatenated_out [25] $end
+$var wire 1 - concatenated_out [24] $end
+$var wire 1 . concatenated_out [23] $end
+$var wire 1 / concatenated_out [22] $end
+$var wire 1 0 concatenated_out [21] $end
+$var wire 1 1 concatenated_out [20] $end
+$var wire 1 2 concatenated_out [19] $end
+$var wire 1 3 concatenated_out [18] $end
+$var wire 1 4 concatenated_out [17] $end
+$var wire 1 5 concatenated_out [16] $end
+$var wire 1 6 concatenated_out [15] $end
+$var wire 1 7 concatenated_out [14] $end
+$var wire 1 8 concatenated_out [13] $end
+$var wire 1 9 concatenated_out [12] $end
+$var wire 1 : concatenated_out [11] $end
+$var wire 1 ; concatenated_out [10] $end
+$var wire 1 < concatenated_out [9] $end
+$var wire 1 = concatenated_out [8] $end
+$var wire 1 > concatenated_out [7] $end
+$var wire 1 ? concatenated_out [6] $end
+$var wire 1 @ concatenated_out [5] $end
+$var wire 1 A concatenated_out [4] $end
+$var wire 1 B concatenated_out [3] $end
+$var wire 1 C concatenated_out [2] $end
+$var wire 1 D concatenated_out [1] $end
+$var wire 1 E concatenated_out [0] $end
+$var wire 1 F empty $end
+$var wire 1 G full $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+0"
+0#
+1$
+0%
+xE
+xD
+xC
+xB
+xA
+x@
+x?
+x>
+x=
+x<
+x;
+x:
+x9
+x8
+x7
+x6
+x5
+x4
+x3
+x2
+x1
+x0
+x/
+x.
+x-
+x,
+x+
+x*
+x)
+x(
+x'
+x&
+1F
+0G
+$end
+#5000
+0!
+#10000
+1!
+#15000
+1#
+0!
+#20000
+1!
+#25000
+0!
+#30000
+1!
+#35000
+0#
+0!
+#40000
+1!
+#45000
+1#
+0!
+#50000
+1!
+#55000
+0!
+#60000
+1!
+#65000
+0#
+0!
+#70000
+1!
+#75000
+1#
+0!
+#80000
+1!
+#85000
+0!
+#90000
+1!
+#95000
+0#
+0!
+#100000
+1!
+#105000
+1#
+0!
+#110000
+1!
+#115000
+0!
+#120000
+1!
+#125000
+0#
+0!
+#130000
+1!
+#135000
+0!
+#140000
+1!
+#145000
+0!
+#150000
+1!
+#155000
+0!
+#160000
+1!
+#165000
+0!
+#170000
+1!
+#175000
+0!
+#180000
+1!
+#185000
+0!
+#190000
+1!
+#195000
+0!
+#200000
+1!
+#205000
+0!
+#210000
+1!
+#215000
+0!
+#220000
+1!

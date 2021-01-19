@@ -1,0 +1,76 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/mtodorov/Documents/Internship_exercises/5.Memory_driver/simulation/modelsim
+vbutton_counter
+Z1 !s110 1611074551
+!i10b 1
+!s100 1:6QO4n9B10R6:W_1DFJE3
+ILJ>S597Yo`2J<_3U3S>Gd0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1611074284
+8/home/mtodorov/Documents/Internship_exercises/5.Memory_driver/button_counter.v
+F/home/mtodorov/Documents/Internship_exercises/5.Memory_driver/button_counter.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1611074550.000000
+!s107 /home/mtodorov/Documents/Internship_exercises/5.Memory_driver/button_counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/mtodorov/Documents/Internship_exercises/5.Memory_driver|/home/mtodorov/Documents/Internship_exercises/5.Memory_driver/button_counter.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work +incdir+/home/mtodorov/Documents/Internship_exercises/5.Memory_driver
+Z6 tCvgOpt 0
+vmemory_driver
+!s110 1611074550
+!i10b 1
+!s100 ?E520Gf[;SGR?hFDjNQB62
+I0bm[TlZj]7[CRlOk1NDmd0
+R2
+R0
+w1611073739
+8/home/mtodorov/Documents/Internship_exercises/5.Memory_driver/memory_driver.v
+F/home/mtodorov/Documents/Internship_exercises/5.Memory_driver/memory_driver.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1611074549.000000
+!s107 /home/mtodorov/Documents/Internship_exercises/5.Memory_driver/memory_driver.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/mtodorov/Documents/Internship_exercises/5.Memory_driver|/home/mtodorov/Documents/Internship_exercises/5.Memory_driver/memory_driver.v|
+!i113 1
+R4
+R5
+R6
+vtestbench
+R1
+!i10b 1
+!s100 g<dLz;4Kgl1DFR9WOj62?0
+Ij[Y58mC_Na4GKh>En=FmT1
+R2
+R0
+w1611074326
+8/home/mtodorov/Documents/Internship_exercises/5.Memory_driver/testbench.v
+F/home/mtodorov/Documents/Internship_exercises/5.Memory_driver/testbench.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1611074551.000000
+!s107 /home/mtodorov/Documents/Internship_exercises/5.Memory_driver/testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/mtodorov/Documents/Internship_exercises/5.Memory_driver|/home/mtodorov/Documents/Internship_exercises/5.Memory_driver/testbench.v|
+!i113 1
+R4
+R5
+R6
