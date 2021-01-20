@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at shift_register.v(50): always construct contains both blocking and non-blocking assignments File: /home/mtodorov/Documents/Internship_exercises/5.Memory_driver/shift_register.v Line: 50

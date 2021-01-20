@@ -5,7 +5,6 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -vlog01compat -work work +incdir+/home/mtodorov/Documents/Internship_exercises/5.Memory_driver {/home/mtodorov/Documents/Internship_exercises/5.Memory_driver/shift_register.v}
 vlog -vlog01compat -work work +incdir+/home/mtodorov/Documents/Internship_exercises/5.Memory_driver {/home/mtodorov/Documents/Internship_exercises/5.Memory_driver/memory_driver.v}
 vlog -vlog01compat -work work +incdir+/home/mtodorov/Documents/Internship_exercises/5.Memory_driver {/home/mtodorov/Documents/Internship_exercises/5.Memory_driver/testbench.v}
 vlog -vlog01compat -work work +incdir+/home/mtodorov/Documents/Internship_exercises/5.Memory_driver {/home/mtodorov/Documents/Internship_exercises/5.Memory_driver/button_counter.v}

@@ -13,8 +13,8 @@ module testbench                                ;
     wire   [32     -1:0]    concatenated_out    ; 
 
     wire                    empty               ;   
-    wire                    full                ;    
-
+    wire                    full                ;
+ 
 
     // -------------------------------------------------------------------
     // Create instance of button_counter_state_machine module
@@ -22,7 +22,7 @@ module testbench                                ;
     (   
             .clk                (clk)               ,	  
             .rst                (rst)               ,
-            .btn                (button)        
+            .btn                (button)            
     );
 	  
     // -------------------------------------------------------------------
@@ -44,7 +44,7 @@ module testbench                                ;
         $dumpvars   ( 1,   testbench )                  ;
 
         clk             =           1                   ;   
-        rst             =           0                   ;     
+        rst             =           1                   ;     
         wr_en           =           1                   ;   
         rd_en           =           0                   ;
         button          =           0                   ;    
@@ -62,7 +62,10 @@ module testbench                                ;
 
     always    @    ( clk or rst or button or wr_en or rd_en) begin
 
-        #15 //At time 15
+        #5 
+            rst = 0;
+        
+        #10 //At time 15
             button  =   1   ;
                                 // Time 20 - first signal to the counter
         #20 //At time 35
@@ -88,8 +91,7 @@ module testbench                                ;
                                 // Time 110 - fourth signal to the counter
         #20 //At time 125
             button  =   0   ;
-
-            $display();
+         
             $display(concatenated_out);
         
 		  

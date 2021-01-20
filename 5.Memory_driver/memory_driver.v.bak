@@ -8,8 +8,8 @@ module memory_driver
         // Input to enable writing
         input                               wr_en               ,
         // Input to enable reading
-        input                               rd_en               ,
-             
+        input                               rd_en               ,   
+
         // OUTPUTS
         // Output for reading data from memory
         output reg     [32      -1:0]       concatenated_out    ,
@@ -18,16 +18,6 @@ module memory_driver
         output                              empty               ,
         // Output to indicate if the memory is full
         output                              full                           		  		  
-    );
-
-    // -------------------------------------------------------------------
-    // Create instance of shift_register module
-    shift_register    shift_reg
-    (   
-            .clk                (clk)  		        ,	  
-            .rst                (rst)               ,
-            .button_counter     (button_counter)    ,
-            .concatenated       (concatenated)      
     );
 
         // ----------------------------------------------------------------
